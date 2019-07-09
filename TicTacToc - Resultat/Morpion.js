@@ -62,7 +62,7 @@ function matchNul(pions) {
 }
 
 // Fonction principale de la boucle de jeu
-function main() {
+function play() {
 	var currentTurn = Math.round((Math.random()));
 	var isGameOver = false;
 	var afficheur = document.querySelector("#gameStatus");
@@ -108,7 +108,7 @@ function SelectVerif() {
 		if (currentSelection > 1) {
 			document.querySelector("#game").style.display = "";
 			document.querySelector("#selecteur").style.display = "none";
-			main();
+			play();
 		}
 	} else {
 		alert("Vous devez choisir un personnage différent de votre adversaire");
